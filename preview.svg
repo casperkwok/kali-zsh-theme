@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace" font-size="15">
+  <!-- 终端窗口 -->
+  <rect x="0" y="0" width="760" height="360" rx="12" fill="#0b0e14"/>
+  <!-- 标题栏 -->
+  <rect x="0" y="0" width="760" height="34" rx="12" fill="#141925"/>
+  <rect x="0" y="22" width="760" height="12" fill="#141925"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="17" r="6" fill="#27c93f"/>
+  <text x="380" y="22" fill="#566074" text-anchor="middle" font-size="13">zsh — kali theme</text>
+
+  <!-- 内容 -->
+  <g xml:space="preserve">
+    <!-- 普通用户 -->
+    <text x="20" y="72"  fill="#2dd4a7">┌──(<tspan fill="#3b82f6" font-weight="bold">kali㉿kali</tspan>)-[<tspan fill="#e6e6e6">~</tspan>]</text>
+    <text x="20" y="96"  fill="#2dd4a7">└─<tspan fill="#3b82f6" font-weight="bold">$</tspan> <tspan fill="#e6e6e6">nmap -sV 192.168.1.0/24</tspan></text>
+
+    <!-- 深层路径折叠 -->
+    <text x="20" y="140" fill="#2dd4a7">┌──(<tspan fill="#3b82f6" font-weight="bold">kali㉿kali</tspan>)-[<tspan fill="#e6e6e6">tools/…/recon/scans/web</tspan>]</text>
+    <text x="20" y="164" fill="#2dd4a7">└─<tspan fill="#3b82f6" font-weight="bold">$</tspan> <tspan fill="#e6e6e6">cat results.txt</tspan></text>
+
+    <!-- 失败的命令 + 右侧退出码 -->
+    <text x="20" y="208" fill="#2dd4a7">┌──(<tspan fill="#3b82f6" font-weight="bold">kali㉿kali</tspan>)-[<tspan fill="#e6e6e6">~</tspan>]</text>
+    <text x="20" y="232" fill="#2dd4a7">└─<tspan fill="#3b82f6" font-weight="bold">$</tspan> <tspan fill="#e6e6e6">cd /nope</tspan></text>
+    <text x="740" y="232" fill="#ef4444" font-weight="bold" text-anchor="end">1 ⨯</text>
+
+    <!-- venv -->
+    <text x="20" y="276" fill="#2dd4a7">┌──(<tspan fill="#d97706">venv</tspan>)─(<tspan fill="#3b82f6" font-weight="bold">kali㉿kali</tspan>)-[<tspan fill="#e6e6e6">~</tspan>]</text>
+    <text x="20" y="300" fill="#2dd4a7">└─<tspan fill="#3b82f6" font-weight="bold">$</tspan> <tspan fill="#e6e6e6">python exploit.py</tspan></text>
+
+    <!-- root 用户 红色 -->
+    <text x="20" y="332" fill="#3b82f6">┌──(<tspan fill="#ef4444" font-weight="bold">root㉿kali</tspan>)-[<tspan fill="#e6e6e6">/etc</tspan>]</text>
+    <text x="20" y="356" fill="#3b82f6">└─<tspan fill="#ef4444" font-weight="bold">#</tspan> <tspan fill="#7d8590">_</tspan></text>
+  </g>
+</svg>
