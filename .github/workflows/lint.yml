@@ -1,0 +1,30 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  shellcheck:
+    name: shellcheck + zsh syntax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        env:
+          # 主题文件是 .zsh-theme 后缀，按 bash 方言做静态检查；
+          # zsh 特有的提示符转义在下一步用真正的 zsh 校验。
+          SHELLCHECK_OPTS: -s bash -e SC2148 -e SC1090 -e SC1091 -e SC2034
+        with:
+          scandir: '.'
+          additional_files: 'kali.zsh-theme'
+
+      - name: Install zsh
+        run: sudo apt-get update && sudo apt-get install -y zsh
+
+      - name: Check zsh syntax
+        run: zsh -n kali.zsh-theme && echo "kali.zsh-theme: syntax OK"

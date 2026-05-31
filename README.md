@@ -6,6 +6,9 @@
 
 无需安装整个 Kali，一个主题文件就能拥有同款终端外观。
 
+**简体中文** · [English](README.en.md)
+
+![CI](https://github.com/casperkwok/kali-zsh-theme/actions/workflows/lint.yml/badge.svg)
 ![Shell](https://img.shields.io/badge/shell-zsh-1f9bdc?logo=zsh&logoColor=white)
 ![Oh My Zsh](https://img.shields.io/badge/Oh%20My%20Zsh-compatible-c4302b)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue)
